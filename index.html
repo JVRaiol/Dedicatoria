@@ -1,61 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-BR">
+
 <head>
+    
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <style> 
-    
-    .titulo_principal{
-        text-align: center;
-           
-    }
-    
-    .titulo2{
 
-        color: aliceblue;
-        margin-top: 100px;
-        margin-left: 500px;
-    }
-    .corpo{
-       
-        background-color: black; 
-    }
+    <style>
+      
+      body{
+        margin: 0;
+      }
     
-    .imagem{
-         margin-left: 180px;
-    }
+      #container {
+        
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background: url('ceu-estrelado.jpg');
+        background-size: cover;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid #fff;
+        font-family: monospace;
+        animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+      }
 
-    .texto{
-        color: aliceblue;
+      #texto-maquina{
+        top: 100px;
+        color: aqua ;
+      }
+
+      @keyframes typing {
+    from {
+      width: 0;
     }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+  }
+
     </style>
-
-    
 
 </head>
 
-<body class="corpo">
+<body>
     
-    <H1 class="titulo_principal" style="color: deepskyblue;"> Dedico esse simples texto pra uma pessoa especial </h1>
-        <h2 class="titulo2"> Observe bem essas estrelas no céu </h2>
-        <img class="imagem" src="estrelas azuis.jpeg" width="600px" >
-        <p class="texto"> Bom, posso ser horrível me expressando com palavras kkkk, mas pelo menos um texto eu sei escrever.
-            E eu hei de dedicar este a uma das pessoas mais legais que já conheci. Se eu pedisse para você 
-            contar cada estrela dessa imagem, muito provavelmente seria uma tarefa difícil. Pense então se eu pedisse a você
-            para contar cada estrela que brilha na galáxia, cada estrela em que brilha andrômeda, cada estrela que brilha em Cartwheel, 
-            cada estrela em sombreiro, cada estrela na vastidão do universo, com suas mais variadas formas, tamanhos e anos-luz de distância. 
-            Seria totalmente impossível de quantizar em termos exatos, haja vista que a infinitude é uma indeterminação na matemática. De certa
-            forma, por mais que mirabolante e e que seja eu fazer esse         
-        </p>
-        
-        <P> Antes de tudo, gostaria de dizer que eu, João, sou horrível me expressando em palavras kkkk... 
-            na realidade, não é novidade essa informação, você com certeza já notou há tempos isso, muito 
-            dificilmente eu ia conseguir falar usando essas palavras com você, de uma forma extraordinariamente 
-            inexplicavel, você tem o dom de apagar todas as palavras do meu cérebro e me deixar mudo. Porém, por
-            meio deste texto, quero expressar em cada palavra aqui escrita os bons sentimentos que tenho por você<di"></div>
-
-        </P>
+  <div id="container">
+    <div id="texto-maquina" style="white-space: pre-wrap;"></div>
+  </div>
+  
+  <script>
+    var textoMáquina = document.getElementById("texto-maquina");
+    var texto = `BOM... APESAR DE EU, JOÃO VICTOR, SER UM CARA HORRÍVEL PARA ME EXPRESSAR EM PALAVRAS,
+    QUERO DEDICAR ESTE BREVE TEXTO A UMA DAS PESSOAS MAIS ESPECIAIS QUE EU JÁ CONHECI\n\n
+    DEU PRA VOCÊ PERCEBER QUANTAS ESTRELAS HÁ NESTA IMAGEM? PROVAVELMENTE NÃO... IMAGINE
+    ENTÃO POR 1 SEGUNDO SE EU PEDISSE PARA VOCÊ CONTAR CADA ESTRELA QUE BRILHA NA VIA LÁCTEA
+    E SOMASSE COM AS ESTRELAS QUE BRILHAM NA GALÁXIA DE ANDRÔMEDA E NA GALÁXIA DE CARTWHEEL,
+    VOCÊ SERIA CAPAZ? NO VASTO E IMENSO UNIVERSO, VOCÊ SERIA CAPAZ DE CONTAR CADA DIAMENTE 
+    CELESTIAL QUE BRILHA NESSE MANTO TENEBROSO E ÉBANO? IMPOSSÍVEL...
+    
+    ISSO ME FAZ LEMBRAR O QUÃO INCRÍVEL É O UNIVERSO, NUNCA SEREMOS CAPAZ DE MEDIR O SEU TAMANHO.
+    O INFINITO É QUASE UMA INDETERMINAÇÃO NA MATEMÁTICA, UM LIMITE QUE NUNCA TEM FIM. UMA INCÓGNITA
+    DIMENSIONAL, E A ÚNICA CERTEZA QUE TEMOS A RESPEITO DO TAMANHO DO UNIVERSO É QUE ELE ESTÁ EM 
+    CONSTANTE EXPANSÃO. À MEDIDA QUE A NOITE AVANÇA, O VÉU NOTURNO REVELA AO NOSSO LAR SEGREDOS DO 
+    TEMPO E DO ESPAÇO EM BELAS FORMAS DE LUZ QUE NOS TRAZEM BONS SENTIMENTOS DE ADMIRAÇÃO AO CONTEMPLAR 
+    O CÉU.
+  
+    POIS BEM, POR MAIS EXPANTOSO E INCRÍVEL QUE SEJA OBSERVAR O BRILHO CINTILANTE DAS ESTRELAS, ELAS NUNCA TERÃO
+    O BRILHO DO SORRISO MAIS LINDO QUE MINHA VISÃO JÁ CAPTOU. POR MAIS INVEROSSÍMIL QUE SEJA PARA UM
+    SER HUMANO CONTAR CADA ESTRELA QUE HÁ NOS CÉUS, NUNCA SERÁ MAIS DIFÍCIL QUE CONTAR CADA FRAGMENTO DE
+    CINTILÂNCIA QUE FORMA AQUELE LINDO E ELEGANTE OLHAR, MESMO QUE O TAMANHO DE SEUS OLHOS SEJA INSIGNIFICANTE
+    COMPARADO AO TAMANHO DAS GALÁXIAS. POR MAIS INCALCULÁVEL QUE SEJA MEDIR O TAMANHO DO UNIVERSO, NUNCA SERÁ MAIS 
+    INCOMPREENSÍVEL DO QUE MEDIR OS SENTIMENTOS INCRÍVEIS QUE SINTO POR ELA, E ASSIM COMO O UNIVERSO ESTÁ 
+    CONSTANTEMENTE SE EXPANDINDO, ESSES MEUS SENTIMENTOS CRESCEM A CADA DIA, PRINCIPALMENTE QUANDO VEJO BEM DE 
+    PERTO AQUELE JEITO CATIVANTE E LINDO QUE FAZEM MINHAS PUPILAS DILATAREM.
+  
+    NESTE TEXTO EXPRESSO ALGUMAS POUCAS VERDADES QUE SINTO PELA MOÇA MAIS INCRÍVEL DO MUNDO,  ALICE s2"
+    
+    - JOÃO VICTOR RAIOL`;
+  
+    textoMáquina.innerHTML = ""; // Limpando o conteúdo inicial
+    var linhas = texto.split('\n');
+    var linhaAtual = 0;
+    var i = 0;
+  
+    function escreverMáquina() {
+      if (linhaAtual < linhas.length) {
+        if (i < linhas[linhaAtual].length) {
+          textoMáquina.innerHTML += linhas[linhaAtual].charAt(i);
+          i++;
+          setTimeout(escreverMáquina, 50);
+        } else {
+          textoMáquina.innerHTML += '<br>';
+          linhaAtual++;
+          i = 0;
+          setTimeout(escreverMáquina, 50);
+        }
+      }
+    }
+  
+    escreverMáquina(); // Iniciando o efeito de máquina de escrever
+  </script>
+  
+   
 </body>
+
 </html>
